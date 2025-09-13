@@ -4,13 +4,18 @@ import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
 const explainer = 'deneme';
----
-
 <Layout title="Optimised Harvest Technologies.">
     <ContextAlert class="mb-8" />
     <h1 class="mb-10">Optimised Harvest Technologies.</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+    <Layout title="Optimised Harvest Technologies">
+        <ContextAlert class="mb-8" />
+        <h1 class="mb-10">Optimised Harvest Technologies</h1>
+        <Markdown content={explainer} class="mb-10 text-lg" />
+        <p>
+            <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">
+                Read the Docs
+            </a>
+        </p>
+    </Layout>
+</Layout>;
+---
