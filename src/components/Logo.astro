@@ -1,5 +1,6 @@
 ---
-// Improvement idea: get actual width as props, and auto-set height by correct aspect-ratio
----
+import { Image } from 'astro:assets';
+import logo from '../../public/logo.png';
 
-<img src="/logo.webp" alt="Logo" width="60" height="auto" />
+<Image src={logo} alt="Logo" />;
+---
