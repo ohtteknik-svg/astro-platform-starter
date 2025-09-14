@@ -1,28 +1,10 @@
 ---
 import Logo from '../components/Logo.astro';
-
-const navItems = [
-    { linkText: 'Who we are?', href: '/aboutus' },
-    { linkText: 'Contact', href: '/contact' }
-];
 ---
 
 <nav class="flex flex-wrap items-center gap-4 pt-6 pb-16 sm:pt-12 sm:pb-24">
     <a href="/">
         <Logo />
-        <h4 class="flex flex-wrap gap-x-4 gap-y-1 font-black">Optimised Harvest Technologies</h4>
     </a>
-    {
-        !!navItems?.length && (
-            <ul class="flex flex-wrap gap-x-4 gap-y-1">
-                {navItems.map((item) => (
-                    <li>
-                        <a href={item.href} class="inline-block px-1.5 py-1 sm:px-3 sm:py-2">
-                            {item.linkText}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        )
-    }
+    <a href="/" class="flex flex-wrap gap-x-4 gap-y-1 font-black text-gray-700 no-underline">Optimized Harvest Technologies</a>
 </nav>

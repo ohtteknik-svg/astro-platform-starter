@@ -3,14 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
-const explainer = 'deneme';
+const explainer = 'Bitki fabrikalarının verimlilik ve sürdürülebilirlik sorunlarını çözmek için buradayız.';
 ---
 
 <Layout title="Optimised Harvest Technologies">
     <ContextAlert class="mb-8" />
 
-    <Markdown content={explainer} class="mb-10 text-lg" />
+    <Markdown content={explainer} class="mb-10 text-4xl text-gray-800 font-family:'Montserrat', sans-serif;" />
     <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Sizin fabrikanızda en büyük zorluk nedir?</a>
     </p>
 </Layout>
