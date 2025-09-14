@@ -2,7 +2,6 @@
 import Logo from '../components/Logo.astro';
 
 const navItems = [
-    { linkText: 'Home', href: '/' },
     { linkText: 'Who we are?', href: '/aboutus' },
     { linkText: 'Contact', href: '/contact' }
 ];
@@ -12,6 +11,7 @@ const navItems = [
     <a href="/">
         <Logo />
     </a>
+    <h1 class="mb-10">Optimised Harvest Technologies</h1>ß
     {
         !!navItems?.length && (
             <ul class="flex flex-wrap gap-x-4 gap-y-1">
