@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContextAlert from '../components/ContextAlert.astro';
+import Markdown from '../components/Markdown.astro';
+
+const explainer = 'Bitki fabrikalarının verimlilik ve sürdürülebilirlik sorunlarını çözmek için buradayız.';
+---
+
+<Layout title="About Us">
+    <ContextAlert class="mb-8" />
+
+    <Markdown content={explainer} class="mb-10 text-4xl text-gray-800 font-family:'Montserrat', sans-serif;" />
+    <p>
+        <a href="mailto:info@oht.solutions" class="btn btn-lg sm:min-w-64">Bize Ulaşın</a>
+    </p>
+</Layout>
